@@ -46,6 +46,22 @@
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/utilities";
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
 
+body {
+  font-family: Roboto;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.loading-box {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(assets/img/loading.gif) no-repeat 50% 50%;
+  background-color: #eaeaea;
+}
+
 @include phone {
     body {
         background-color: blue;

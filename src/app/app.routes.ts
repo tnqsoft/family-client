@@ -1,27 +1,11 @@
-// Imports
-// Deprecated import
-// import { provideRouter, RouterConfig } from '@angular/router';
-import { ModuleWithProviders }  from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { HomeRoutes } from './home';
-import { LoginRoutes } from './login';
+import { Routes } from '@angular/router';
+
+import { LoginRoutes, LoginComponent } from './login';
+import { DashboardRoutes } from './dashboard';
 
 // Route Configuration
 export const routes: Routes = [
-  // {
-  //   path: '',
-  //   redirectTo: '/login',
-  //   pathMatch: 'full'
-  // },
-  ...HomeRoutes,
+  ...DashboardRoutes,
   ...LoginRoutes,
-  // otherwise redirect to home
-  { path: '**', redirectTo: '' }
+  { path: '**', component: LoginComponent }
 ];
-
-// Deprecated provide
-// export const APP_ROUTER_PROVIDERS = [
-//   provideRouter(routes)
-// ];
-
-export const routing: ModuleWithProviders = RouterModule.forRoot(routes);

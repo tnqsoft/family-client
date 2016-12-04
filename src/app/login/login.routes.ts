@@ -1,11 +1,8 @@
-// Imports
-// Deprecated import
-// import { RouterConfig } from '@angular/router';
-import { Routes } from '@angular/router';
+import { Route } from '@angular/router';
 
-import { LoginComponent }    from './login.component';
+import { LoginComponent } from './login.component';
 
 // Route Configuration
-export const LoginRoutes: Routes = [
-  { path: 'login', component: LoginComponent },
+export const LoginRoutes: Route[] = [
+  { path: 'login', component: LoginComponent }
 ];
