@@ -11,7 +11,7 @@ export class LoginComponent implements OnInit {
 
   private model: any = {};
   private loading: boolean = false;
-  private error = '';
+  private error: string = '';
 
   constructor(
     private router: Router,
