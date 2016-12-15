@@ -21,7 +21,9 @@
         "../node_modules/font-awesome/scss/font-awesome.scss",
         "styles.scss"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/angular2-ie9-shims/shims_for_IE@2.1.2.js"
+      ],
       "environments": {
         "source": "environments/environment.ts",
         "dev": "environments/environment.ts",
